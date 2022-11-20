@@ -1,0 +1,332 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: #eceef3;
+    font-family: 'Roboto', sans-serif
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.item-fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0.5rem;
+}
+
+/* estilos de header */
+
+header{
+    display: none;
+    background-color: #cdc1ff;
+    padding: 0.5rem;
+    position: sticky;
+    z-index: 2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header img{
+    width: 8%;
+}
+
+/* estilos de main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    color:#182941;
+    text-align: center;
+    font-size: 45px;
+}
+
+main h1 span{
+    display: block;
+}
+
+main p{
+    padding: 0.2rem;
+    text-align: center;
+}
+
+main p span{
+    display: block;
+    font-weight: normal;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .boton{
+    background-color: #7371fc;
+    color: whitesmoke;
+    padding: 0.7rem;
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px black;
+    text-decoration: none;
+}
+
+main img{
+    width: 50%;
+}
+
+/* estilos de section */
+
+section{
+    display: none;
+}
+
+/* estilos de footer */
+
+footer{
+    background-color: #cdc1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter{
+    display: block;
+    display: flex;
+    padding: 1rem;
+}
+
+.newsletter form legend{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-footer{
+    padding-bottom: 1rem;
+}
+
+.menu-footer ul li{
+    list-style: none;
+    text-align: center;
+}
+
+
+
+/* mq */
+
+@media screen and (min-width:1024px){
+    /* estilos del menu */
+
+    header nav ul li{
+        transition: 3s;
+    }
+
+    header nav ul li:hover{
+        background-color: #e5d9f2;
+        transform: 
+            scale(0.8);
+        transition: 1s;
+    }
+
+    /* estilos main */
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "p img"
+            "h2 img"
+            "p-dos img"
+            "boton img";
+        justify-items: center;
+    }
+
+    main p{
+        grid-area: p;
+    }
+
+    main h2{
+        grid-area: h2;
+    }
+
+    main .p-dos{
+        grid-area: p-dos;
+    }
+
+    main .boton{
+        grid-area: boton;
+    }
+
+    /*estilos del boton*/
+
+    main .boton:hover{
+        transform: scale(o.8);
+    }
+
+    main img{
+        grid-area: img;
+    }
+
+    /* estilos de section */
+
+    .porque-elegirme div img{
+        animation-name: img-latido;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 1s;
+    }
+
+    .sobre-mi div{
+        display: grid;   
+        grid-template-columns: 3fr 4fr;
+        align-items: center;
+        padding: 4rem;
+        margin-left: 10em;
+        margin-right: 10rem;
+    }
+
+    .sobre-mi div h2{
+        padding-bottom: 1rem;
+        font-size: 35px;
+        color: #182941; 
+    }
+
+    .sobre-mi div h2 a{
+        display: block;
+    }
+
+    .sobre-mi div h2 a span{
+        display: block;
+    }
+
+    .sobre-mi div p{
+        padding: 2rem;
+        text-align: left;
+        display: inline-block;
+    }
+
+    section .boton{
+        background-color: #7371fc;
+        color: whitesmoke;
+        padding: 0.7rem;
+        box-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px black;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .porque-elegirme{
+        display: block;
+        display: flex;
+        background-color: #e5d9f2;
+    }
+
+    .porque-elegirme div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .porque-elegirme div img{
+        width: 20%;
+        margin: 1rem;
+    }
+
+    .porque-elegirme div p{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .porque-elegirme-dos{
+        display: block;
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .porque-elegirme-dos div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .porque-elegirme-dos div p{
+        text-align: left;
+    }
+
+    .porque-elegirme-dos div h3{
+        padding: 4rem;
+        font-size: 35px;
+    }
+
+    .newsletter form fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 35rem;
+        padding-right: 35rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+
+    @keyframes img-latido {
+        0%{
+            transform: scale(1);
+        }
+
+        10%{
+            transform: scale(0.);
+        }
+        
+    }
+}
+
+
+@media screen and (min-width:600px){
+    /* estilos de header */
+    header{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #182941;
+    }
+
+    header nav ul{
+        list-style: none;
+        display: flex;
+        gap: 1.3rem;
+    }
+
+    /* estilos de main */
+    main{
+        padding: 2rem;
+    }
+
+    /* estilos de section */ 
+
+    .sobre-mi{
+        display: block;
+        display: flex;
+    }
+
+    
+
+}
