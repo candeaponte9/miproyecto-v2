@@ -6,15 +6,15 @@
     box-sizing: border-box;
 }
 
-/* estilos generales */
+/* -- estilos generales -- */
 
 body{
     background-color: #eceef3;
     font-family: 'Roboto', sans-serif
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link, a:visited, a:active{
+    text-decoration: none;
 }
 
 .item-fixed{
@@ -121,7 +121,147 @@ footer{
     text-align: center;
 }
 
+.newsletter form fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 35rem;
+    padding-right: 35rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
+/* estilos de pagina Turnos */
+
+.turnos{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.turnos h1{
+    padding: 0.8rem;
+    font-size: 40px;
+    text-align: center;
+}
+
+.turnos form legend{
+    font-weight: bold;
+}
+
+/* estilos de pagina Sobre mi */
+
+.sobre-mi-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-mi-page img{
+    width: 20%;
+    display: block;
+}
+
+.sobre-mi-page h1{
+    display: flex;
+    display: block;
+    padding-top: 1rem;
+    font-size: 50px;
+}
+
+.titulo-sm{
+    text-align: center;
+    align-items: center;
+}
+
+.bajada-sm{
+    padding: 1rem;
+}
+
+.seccion-sm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: #e5d9f2;
+}
+
+.especialidades{
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.especialidades h3{
+    font-size: 20px;
+}
+
+.especialidades ul li{
+    list-style: square;
+    list-style-position: inside;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+.certificaciones{
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.certificaciones h3{
+    font-size: 20px;
+}
+
+.certificaciones ul li{
+    list-style: square;
+    list-style-position: inside;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* estilos de pagina Servicios */
+
+.servicios-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.servicios-titulo img{
+    width: 88%;
+    padding-bottom: 1rem;
+}
+
+.servicios-titulo h1{
+    padding: 1rem;
+}
+
+.servicios-section{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.servicios-section div{
+    padding: 2rem;
+    text-align: center;
+}
+
+.servicios-section h4{
+    font-size: 20px;
+}
+
+.servicios-caja{
+    width: auto ;
+    height: auto ;
+    margin: 1rem;
+    background-color: #e5d9f2;
+}
 
 /* mq */
 
@@ -133,7 +273,7 @@ footer{
     }
 
     header nav ul li:hover{
-        background-color: #e5d9f2;
+        background-color: #cdc1ff;
         transform: 
             scale(0.8);
         transition: 1s;
@@ -171,7 +311,7 @@ footer{
     /*estilos del boton*/
 
     main .boton:hover{
-        transform: scale(o.8);
+        transform: scale(o.7);
     }
 
     main img{
@@ -191,15 +331,15 @@ footer{
         display: grid;   
         grid-template-columns: 3fr 4fr;
         align-items: center;
-        padding: 4rem;
-        margin-left: 10em;
+        padding: 10rem;
+        margin-left: 10rem;
         margin-right: 10rem;
     }
 
     .sobre-mi div h2{
         padding-bottom: 1rem;
         font-size: 35px;
-        color: #182941; 
+        color: #182941;
     }
 
     .sobre-mi div h2 a{
@@ -275,27 +415,36 @@ footer{
         font-size: 35px;
     }
 
-    .newsletter form fieldset{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 35rem;
-        padding-right: 35rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    
-
     @keyframes img-latido {
         0%{
             transform: scale(1);
         }
 
         10%{
-            transform: scale(0.);
+            transform: scale(0.9);
         }
-        
     }
+    
+    /* estilos de pagina Turnos */
+    
+    .turnos img{
+        width: 10%;
+        align-items: center;
+    }
+    
+    .turnos form{
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    .turnos form div{
+        text-align: center;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+    
 }
 
 
@@ -316,8 +465,16 @@ footer{
     }
 
     /* estilos de main */
-    main{
-        padding: 2rem;
+    main p{
+        padding: 1rem;
+    }
+
+    main .boton{
+        margin: 1rem;
+    }
+
+    main img{
+        width: 40%;
     }
 
     /* estilos de section */ 
@@ -327,6 +484,332 @@ footer{
         display: flex;
     }
 
+    .porque-elegirme div img{
+        animation-name: img-latido;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 1s;
+    }
+
+    .sobre-mi div{
+        display: grid;   
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 1em;
+        margin-right: 1rem;
+    }
+
+    .sobre-mi div h2{
+        padding-bottom: 1rem;
+        font-size: 35px;
+        color: #182941;
+    }
+
+    .sobre-mi div h2 a{
+        display: block;
+    }
+
+    .sobre-mi div h2 a span{
+        display: block;
+    }
+
+    .sobre-mi div p{
+        padding: 2rem;
+        text-align: left;
+        display: inline-block;
+    }
+
+    section .boton{
+        background-color: #7371fc;
+        color: whitesmoke;
+        padding: 0.7rem;
+        box-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px black;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+    }
     
+    .porque-elegirme{
+        display: block;
+        display: flex;
+        background-color: #e5d9f2;
+    }
+
+    .porque-elegirme div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .porque-elegirme div img{
+        width: 20%;
+        margin: 1rem;
+    }
+
+    .porque-elegirme div p{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .porque-elegirme-dos{
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+
+    .porque-elegirme-dos div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .porque-elegirme-dos div p{
+        text-align: left;
+    }
+
+    .porque-elegirme-dos div h3{
+        padding: 3rem;
+        font-size: 30px;
+    }
+
+    @keyframes img-latido {
+        0%{
+            transform: scale(1);
+        }
+
+        10%{
+            transform: scale(0.9);
+        }
+    }
+
+    .newsletter form fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:320px){
+    /* estilos de header */
+    header{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #182941;
+    }
+
+    header nav ul{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    /* estilos de main */
+    main p{
+        padding: 1rem;
+    }
+
+    main .boton{
+        margin: 1rem;
+    }
+
+    main img{
+        width: 40%;
+    }
+
+    /* estilos de section */
+
+    .porque-elegirme div img{
+        animation-name: img-latido;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 1s;
+    }
+
+    .sobre-mi div{
+        display: grid;   
+        grid-template-columns: 3fr 4fr;
+        align-items: center;
+        padding: 4rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .sobre-mi div h2{
+        padding-bottom: 1rem;
+        font-size: 35px;
+        color: #182941;
+    }
+
+    .sobre-mi div h2 a{
+        display: block;
+    }
+
+    .sobre-mi div h2 a span{
+        display: block;
+    }
+
+    .sobre-mi div p{
+        padding: 2rem;
+        text-align: left;
+        display: inline-block;
+    }
+
+    section .boton{
+        background-color: #7371fc;
+        color: whitesmoke;
+        padding: 0.7rem;
+        box-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px black;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .porque-elegirme{
+        display: block;
+        display: flex;
+        background-color: #e5d9f2;
+    }
+
+    .porque-elegirme div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .porque-elegirme div img{
+        width: 20%;
+        margin: 1rem;
+    }
+
+    .porque-elegirme div p{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .porque-elegirme-dos{
+        display: block;
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .porque-elegirme-dos div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .porque-elegirme-dos div p{
+        text-align: left;
+    }
+
+    .porque-elegirme-dos div h3{
+        padding: 4rem;
+        font-size: 35px;
+    }
+
+    @keyframes img-latido {
+        0%{
+            transform: scale(1);
+        }
+
+        10%{
+            transform: scale(0.9);
+        }
+    }
+
+    /* estilos de footer */
+    .newsletter form legend{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    .newsletter form fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    /* estilos de pagina Sobre mi */
+
+    .sobre-mi-page img{
+        padding-top: 1rem;
+        width: 30%;
+    }
+
+    .seccion-sm{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        background-color: #e5d9f2;
+    }
+
+    .especialidades ul li{
+        list-style: square;
+        list-style-position: inside;
+        padding-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .certificaciones{
+        padding-bottom: 1rem;
+        text-align: left;
+    }
+
+    .certificaciones ul li{
+        list-style: square;
+        list-style-position: inside;
+        padding-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    /* estilos de pagina Servicios */
+
+    .servicios-titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .servicios-titulo img{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .servicios-titulo h1{
+        padding: 0.5rem;
+    }
+
+    .servicios-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
 
 }
