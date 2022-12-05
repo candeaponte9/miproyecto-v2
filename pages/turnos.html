@@ -4,50 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Como psicóloga ayudo a las personas con las que trabajo a resolver y superar sus problemas emocionales, a través del aprendizaje y del entrenamiento de diferentes técnicas psicológicas. Creo que la forma con la que afrontamos y vivimos nuestras circunstancias determina en gran medida nuestra felicidad.">
+    <meta name="keywords"  content="MÉDICO, MÉDICO ONLINE, PSIQUIATRA, PSIQUIATRA ONLINE, SALUD MENTAL, AYUDA SALUD MENTAL, TERAPIA ONLINE, TERAPIA, TURNOS TERAPIA ONLINE">
     <!-- Link de animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- link tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Sacá tu turno - Dra. Sandra Del Vecchio</title>
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="sticky-md-top" class="contenedor">
         <header>
             <img src="../img/logo.png" alt="Logotipo">
             <nav>
                 <ul>
                     <li>
-                        <a href="../index.html">Inicio</a>
+                        <a href="../index.html" class="text-dark">Inicio</a>
                     </li>
                     <li>
-                        <a href="../pages/sobre-mi.html">Sobre mí</a>
+                        <a href="../pages/sobre-mi.html" class="text-dark">Sobre mí</a>
                     </li>
                     <li>
-                        <a href="../pages/servicios.html">Servicios</a>
+                        <a href="../pages/servicios.html" class="text-dark">Servicios</a>
                     </li>
                     <li>
-                        <a href="../pages/contacto.html">Contacto</a>
+                        <a href="../pages/turnos.html" class="text-dark">Turnos</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html" class="text-dark">Contacto</a>
                     </li>
                 </ul>
             </nav>
         </header>
+    </div>
 
 <!-- Main -->
 
-    <main class="turnos">
+    <main class="turnos"> 
         <img src="../img/calendario.png" alt="Icono de calendario">
         <h1> Sacá tu turno </h1>
-        
         <form action="">
             <fieldset>
-                <div>
+                <div class="form-floating">
                     <legend> Seleccioná fecha y hora </legend>
-                    <input type="datetime-local" name="" id="">
+                    <input class="form-control" type="datetime-local" name="calendario" id="floatingTextarea">
                 </div>    
             </fieldset>
         </form>
@@ -55,29 +64,27 @@
         <form action="">
             <fieldset>
                 <legend> Datos del paciente </legend>
-                <div>
-                    <label for="">Nombre:</label>
-                    <input type="text" placeholder="">
-                </div>
-        
-                <div>
-                    <label for="">DNI:</label>
-                    <input type="number" placeholder="">
-                </div>
-        
-                <div>
-                    <label for="">Teléfono:</label>
-                    <input type="tel" placeholder="">
-                </div>
-        
-                <div>
-                    <label for="">Email:</label>
-                    <input type="email" placeholder="">
-                </div>
-        
-                <div>
-                    <input type="submit">
-                </div>
+                <div class="mb-3">
+                    <label for="exampleInputtext1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">DNI</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acepto las condiciones de pedido de turnos</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
             </fieldset>
         </form>          
     </main>    
@@ -91,10 +98,10 @@
             <form action="">
                 <fieldset>
                     <legend> Subscribite para recibir novedades </legend>
-                    <div>
-                        <label for=""> Completá tu email </label>
-                        <input type="email" placeholder="">
-                    </div>
+                    <div class="hstack gap-3">
+                        <input class="form-control me-auto" type="text" placeholder="Email" aria-label="Add your item here...">
+                        <button type="button" class="btn btn-secondary">Enviar</button>
+                      </div>
                 </fieldset>
             </form> 
         </div>
@@ -104,19 +111,19 @@
             <h4> Más información </h4>
                 <ul>
                     <li>
-                        <a href="../index.html">Inicio</a>
+                        <a href="../index.html" class="text-dark">Inicio</a>
                     </li>
                     <li>
-                        <a href="../pages/sobre-mi.html">Sobre mí</a>
+                        <a href="../pages/sobre-mi.html" class="text-dark">Sobre mí</a>
                     </li>
                     <li>
-                        <a href="../pages/servicios.html">Servicios</a>
+                        <a href="../pages/servicios.html" class="text-dark">Servicios</a>
                     </li>
                     <li>
-                        <a href="../pages/contacto.html">Contacto</a>
+                        <a href="../pages/turnos.html" class="text-dark">Turnos</a>
                     </li>
                     <li>
-                        <a href="../pages/turnos.html">Turnos</a>
+                        <a href="../pages/contacto.html" class="text-dark">Contacto</a>
                     </li>
                 </ul>
             </div>

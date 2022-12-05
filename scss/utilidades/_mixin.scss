@@ -1,0 +1,14 @@
+@mixin estilos-botones {
+    background-color: $color-botones;
+    color: whitesmoke;
+    padding: 0.7rem;
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px black;
+    text-decoration: none;
+}
+
+@mixin flex-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

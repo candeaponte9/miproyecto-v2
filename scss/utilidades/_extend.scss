@@ -1,0 +1,17 @@
+// extend
+
+%estilossection-sm{
+    padding-bottom: 2rem;
+    text-align: left;
+    h3{
+        font-size: 20px;
+    }
+    ul{
+        li{
+            list-style: square;
+            list-style-position: inside;
+            padding-top: 1rem;
+            margin-left: 1rem;
+        }
+    }
+}

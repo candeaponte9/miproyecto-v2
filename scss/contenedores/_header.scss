@@ -1,0 +1,21 @@
+/* estilos de header */
+
+header{
+    display: none;
+    background-color: $color-secundario;
+    padding: 0.5rem;
+    z-index: 2;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1.3rem;   
+        }
+    }
+}

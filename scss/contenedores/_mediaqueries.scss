@@ -1,0 +1,351 @@
+@media (min-width:1200px){
+    
+    /* estilos del menu */
+    header{
+        img{
+        max-width: 5%;
+        min-width: 5%;
+        }
+        nav{
+            ul{
+                li{
+                    transition: 3s;
+                    &:hover{
+                    background-color: $color-secundario;
+                    transform: 
+                        scale(0.8);
+                    transition: 1s;    
+                    }
+                }
+            }
+        }
+    }
+    
+    /* estilos main */
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "p img"
+            "h2 img"
+            "p-dos img"
+            "boton img";
+        justify-items: center;
+        p{
+            grid-area: p;
+        }
+        h2{
+            grid-area: h2;
+        }
+        .p-dos{
+            grid-area: p-dos;
+        }
+        .boton{
+            grid-area: boton;
+        &:hover{
+            transform: scale(o.7);
+        }
+        }
+        img{
+            grid-area: img;
+        }
+    }
+
+    /* estilos de section */
+
+    .sobre-mi{
+        div{
+            padding: 1rem;
+        }
+    } 
+
+    section{
+        .boton{
+            background-color: $color-botones;
+            color: whitesmoke;
+            padding: 0.7rem;
+            box-shadow: 1px 1px 5px black;
+            text-shadow: 1px 1px 5px black;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+    } 
+    
+    .porque-elegirme{
+        div{
+            img{
+            animation-name: img-latido;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            width: 20%;
+            margin: 1rem;
+            }
+        } 
+    } 
+
+    
+    @keyframes img-latido {
+        0%{
+            transform: scale(1);
+        }
+
+        10%{
+            transform: scale(0.9);
+        }
+    }
+    
+    /* estilos de pagina Turnos */
+    
+    .turnos{
+        img{
+            width: 10%;
+        }
+    } 
+    
+}
+
+@media (min-width:750px) and (max-width:1200px){
+    
+    /* estilos del header */
+    header{
+        img{
+            max-width: 7%;
+        }
+    } 
+
+    /* estilos de main */
+    main{
+        p{
+            padding: 1rem;
+        }
+        .boton{
+            margin: 1rem;
+        }
+        img{
+            width: 30%;    
+        }
+    } 
+        
+    /* estilos de section */ 
+
+    section{
+        .boton{
+            background-color: $color-botones;
+            color: whitesmoke;
+            padding: 0.7rem;
+            box-shadow: 1px 1px 5px black;
+            text-shadow: 1px 1px 5px black;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+    } 
+
+    .sobre-mi{
+        text-align: center;
+        padding: 1rem;
+        p{
+            margin: 1rem;
+        }
+    }
+
+    .porque-elegirme{
+        div{
+            img{
+                width: 20%;
+                margin: 1rem;
+                animation-name: img-latido;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-delay: 1s;
+            }
+        } 
+    } 
+
+    @keyframes img-latido {
+        0%{
+            transform: scale(1);
+        }
+
+        10%{
+            transform: scale(0.9);
+        }
+    }
+
+    .newsletter{
+        form{
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 10rem;
+                padding-right: 10rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        } 
+    } 
+}
+
+@media (min-width:375px) and (max-width:750px){
+    /* estilos de header */
+    header{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #182941;
+        nav{
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 0.6rem;
+            }
+        }
+        img{
+            max-width: 9%;
+        }
+    }
+    /* estilos de main */
+    main{
+        p{
+            padding: 1rem;
+        }
+        .boton{
+            margin: 1rem;
+        }
+        img{
+            width: 40%;
+        }
+    } 
+    /* estilos de section */
+    section{
+        .boton{
+            background-color: $color-botones;
+            color: whitesmoke;
+            padding: 0.7rem;
+            box-shadow: 1px 1px 5px black;
+            text-shadow: 1px 1px 5px black;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }    
+    } 
+    .sobre-mi{
+        text-align: center;
+        p{
+            margin: 1rem;
+        }
+    }
+    .porque-elegirme{
+        div{
+            img{
+                animation-name: img-latido;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-delay: 1s;
+                width: 10%;
+            }
+        } 
+    } 
+    .porque-elegirme-dos{
+        text-align: center;
+    }
+
+    @keyframes img-latido {
+        0%{
+            transform: scale(1);
+        }
+
+        10%{
+            transform: scale(0.9);
+        }
+    }    
+
+    /* estilos de footer */
+    .newsletter{
+        form{
+            legend{
+                font-weight: bold;
+                font-size: 17px;
+            }
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 5rem;
+                padding-right: 5rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        } 
+    } 
+
+    /* estilos de pagina Sobre mi */
+
+    .sobre-mi-page{
+        img{
+            padding-top: 1rem;
+            width: 30%;
+        }
+    } 
+    .seccion-sm{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        background-color: $color-terciario;
+    }
+    
+    .especialidades{
+        ul{
+            li{
+                list-style: square;
+                list-style-position: inside;
+                padding-top: 0.5rem;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    .certificaciones{
+        padding-bottom: 1rem;
+        text-align: left;
+        ul{
+            li{
+                list-style: square;
+                list-style-position: inside;
+                padding-top: 1rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    /* estilos de pagina Servicios */
+
+    .servicios-titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        img{
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+        h1{
+            padding: 0.5rem;
+        }
+    }
+    .servicios-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+  
