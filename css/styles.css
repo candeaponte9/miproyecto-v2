@@ -19,7 +19,7 @@
 header {
   display: none;
   background-color: #cdc1ff;
-  padding: 0.5rem;
+  margin-bottom: 0.5rem;
   z-index: 2;
   text-decoration: none;
   font-weight: bold;
@@ -30,7 +30,7 @@ header {
   header nav ul {
     list-style: none;
     display: flex;
-    gap: 1.3rem; }
+    gap: 1rem; }
 
 /* -- estilos generales -- */
 body {
@@ -209,8 +209,8 @@ footer {
 @media (min-width: 1200px) {
   /* estilos del menu */
   header img {
-    max-width: 5%;
-    min-width: 5%; }
+    max-width: 16%;
+    min-width: 16%; }
   header nav ul li {
     transition: 3s; }
     header nav ul li:hover {
@@ -267,7 +267,7 @@ footer {
 @media (min-width: 750px) and (max-width: 1200px) {
   /* estilos del header */
   header img {
-    max-width: 7%; }
+    max-width: 15%; }
   /* estilos de main */
   main p {
     padding: 1rem; }
@@ -324,7 +324,7 @@ footer {
       display: flex;
       gap: 0.6rem; }
     header img {
-      max-width: 9%; }
+      max-width: 15%; }
   /* estilos de main */
   main p {
     padding: 1rem; }
